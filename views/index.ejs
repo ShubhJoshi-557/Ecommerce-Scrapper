@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="productstyle.css">
+    <title>Search Results</title>
+</head>
+<body>
+    <h2 style="color: aliceblue;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 100;font-size: 50px;padding-bottom: 2%;">Amazon</h2>
+    <div class='amazon' id='amazon'>
+        <%= amazon_data.length %>
+        <% for( let i = 0; i < 3; i++ ) { %>
+        <div class="card">
+            <div class='cover'>
+                <img class="am_img_url" src='<%= amazon_data[3][i] %>' alt='cover' style='max-width:230px;max-height:230px;width: auto;height: auto; margin: auto;'/>
+            </div>
+            <div class='card-content'>
+                <h4>
+                <a href='http://<%= amazon_data[4][i] %>'><%= amazon_data[0][i] %> </a>
+            </h4>
+            <br>
+                <p class='Price' style="font-size: 20px;">₹<%= amazon_data[2][i] %></p>
+                <p class="Rating"><%= amazon_data[1][i].substring(0,3) %>
+                <img src="/star.png" style='max-width:20px;max-height:20px;width: auto;height: auto; margin: auto;padding-top: 8px;' alt=""></p>
+            
+            </div>
+        </div>
+        <% } %>        
+    </div>
+    <h2 style="color: aliceblue;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 100;font-size: 50px;padding-bottom: 2%;padding-top: 5%;">Flipkart</h2>
+    <div class='flipkart' id='flipkart'>
+        <%= flipkart_data.length %>
+        <% for( let i = 0; i < 3; i++ ) { %>
+        <div class="card">
+            <div class='cover'>
+                <img class="am_img_url" src='<%= flipkart_data[3][i] %>' alt='cover' style='max-width:230px;max-height:230px;width: auto;height: auto; margin: auto;'/>
+            </div>
+            <div class='card-content'>
+                <h4>
+                <a href='<%= flipkart_data[4][i] %>'><%= flipkart_data[0][i] %> </a>
+            </h4>
+            <br>
+                <p class='Price' style="font-size: 20px;"><%= flipkart_data[1][i] %></p>
+                <p class="Rating"><%= flipkart_data[2][i] %>
+                <img src="/star.png" style='max-width:20px;max-height:20px;width: auto;height: auto; margin: auto;padding-top: 8px;' alt=""></p>
+            </div>
+        </div>
+        <% } %>
+    </div>
+<!-- <script src="index.js"></script> -->
+</body>
+</html>
