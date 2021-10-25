@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    padding: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #0A1929;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .card {
+    display: inline-block;
+    width: 270px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #265D97;
+    padding: 16px;
+    overflow: hidden;
+    background-color: #132F4C;
+    transition: background-color 0.4s;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .card:hover {
+    background-color: #0070E1;
+    box-shadow: 0 8px 20px -4px hsl(0, 0%, 5%);
+  }
+  
+  .cover {
+    position: relative;
+    margin-bottom: 18px;
+    background-color: #fafafa;
+    border-radius: 5px;
+  }
+  .cover img {
+    display: block;
+    width: 100%;
+  }
+  .cover.artist img {
+    border-radius: 50%;
+  }
+
+  .card-content {
+    font-family: "Montserrat", sans-serif;
+    color: #fafafa;
+  }
+  .card-content h4 {
+    margin-bottom: 6px;
+  }
+  .card-content p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 2.5em;
+    font-size: 14px;
+    color: hsl(0, 0%, 70%);
+  }
+
+  
+  
