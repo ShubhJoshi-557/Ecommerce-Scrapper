@@ -24,7 +24,7 @@ It scraps the two most popular Ecommerce Platforms in India and returns the top 
   + Eg. npm install axios
 + Run the main.js file using command: node main.js
 + Now the Express + Node Server is live in Localhost Port 3000
-+ Go to browser and type: http://localhost:3000/
++ Go to browser and type: http://localhost:3000
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/62555809/138767188-7e5f7f3d-d797-4e77-9f0b-748c72644cdf.png)
