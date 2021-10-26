@@ -6,9 +6,12 @@ It scraps the two most popular Ecommerce Platforms in India and returns the top 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Languages Used :
 
-+ HTML
-+ CSS
-+ JAVASCRIPT
+## Fontend:
+  + HTML
+  + CSS
+  + JAVASCRIPT
+## Backend:
+  + Javascript (Node.js + Express.js)
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Javascript Dependencies :
 
