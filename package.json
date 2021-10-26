@@ -15,6 +15,7 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "jsdom": "^18.0.0",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "puppeteer": "^10.4.0"
   }
 }

@@ -18,13 +18,14 @@
             </div>
             <div class='card-content'>
                 <h4>
-                <a href='http://<%= amazon_data[4][i] %>'><%= amazon_data[0][i] %> </a>
+                <a class="link" href='http://<%= amazon_data[4][i] %>'><%= amazon_data[0][i] %> </a>
             </h4>
             <br>
                 <p class='Price' style="font-size: 20px;">₹<%= amazon_data[2][i] %></p>
                 <p class="Rating"><%= amazon_data[1][i].substring(0,3) %>
                 <img src="/star.png" style='max-width:20px;max-height:20px;width: auto;height: auto; margin: auto;padding-top: 8px;' alt=""></p>
-            
+                <br>  
+                <button class="button button2" id='http://<%= amazon_data[4][i] %>'>Add To Cart 🛒</button>
             </div>
         </div>
         <% } %>        
@@ -39,16 +40,19 @@
             </div>
             <div class='card-content'>
                 <h4>
-                <a href='<%= flipkart_data[4][i] %>'><%= flipkart_data[0][i] %> </a>
+                <a class="link" href='<%= flipkart_data[4][i] %>'><%= flipkart_data[0][i] %> </a>
             </h4>
             <br>
                 <p class='Price' style="font-size: 20px;"><%= flipkart_data[1][i] %></p>
                 <p class="Rating"><%= flipkart_data[2][i] %>
                 <img src="/star.png" style='max-width:20px;max-height:20px;width: auto;height: auto; margin: auto;padding-top: 8px;' alt=""></p>
+                <br>  
+                <button class="button button2" id ='<%= flipkart_data[4][i] %>'>Add To Cart 🛒</button>
             </div>
         </div>
         <% } %>
     </div>
-<!-- <script src="index.js"></script> -->
+
+<script src="automation.js"></script>
 </body>
 </html>

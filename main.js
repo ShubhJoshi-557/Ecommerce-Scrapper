@@ -10,6 +10,7 @@ const bodyParser = require("body-parser")
 let jsdom = require("jsdom");
 const path = require('path');
 let ejs = require('ejs')
+const puppeteer = require('puppeteer')
 
 const app = express();
 
@@ -22,6 +23,42 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.get('/',function(req,res){
     res.sendFile('index.html',{root: __dirname+'/public'});
 });
+
+app.get('/api/:url',async(req,res) => {
+    let dirtyurl = String(req.params.url); 
+    let cleanurl = dirtyurl.split("__uwu__").join("/");
+    cleanurl = cleanurl.split("__uvu__").join("?");;
+    console.log(cleanurl);
+    let browser = await puppeteer.launch({
+        headless: false,
+        args: [
+            '--start-maximized'
+        ],
+        defaultViewport: null
+    });
+    
+    // get the tabs (there is only one tab)
+    let pages = await browser.pages();
+    let page = pages[0];
+    
+    // open the url
+    
+
+    if(cleanurl.includes("www.amazon.in")){
+        console.log("AMAZON URL");
+        await page.goto(cleanurl);
+        await page.waitForSelector('input[name="submit.add-to-cart"]',{timeout: 3000});
+        await page.click('input[name="submit.add-to-cart"]');
+    }else if(cleanurl.includes("www.flipkart.com")){
+        console.log("FLIPKART URL");
+        await page.goto(cleanurl);
+        await page.waitForSelector('button._2KpZ6l._2U9uOA._3v1-ww',{timeout: 3000});
+        await page.click('button._2KpZ6l._2U9uOA._3v1-ww');
+    }
+    
+
+    res.send("Success");
+})
 
 app.post('/search',(req,response) => {
     console.log(req.body.search);
@@ -62,7 +99,8 @@ app.post('/search',(req,response) => {
         }
         flipkart_data = [productName,productPrice,productRating,productImg,productLink]
     });
-    delay(9000).then(axios.get('https://www.amazon.in/s?k='+req.body.search).then((res) =>{
+    delay(3000);
+    axios.get('https://www.amazon.in/s?k='+req.body.search).then((res) =>{
         let html = res.data;
         let dom = new jsdom.JSDOM(html);
         let document = dom.window.document;
@@ -83,7 +121,7 @@ app.post('/search',(req,response) => {
         console.log(amazon_data);
         console.log(flipkart_data);
         response.render('index.ejs',{root: __dirname+'/views', tite: 'Search Results', amazon_data, flipkart_data});
-    }));
+    });
 });
 
 
