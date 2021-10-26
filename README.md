@@ -32,7 +32,16 @@ It scraps the two most popular Ecommerce Platforms in India and returns the top 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/62555809/138767188-7e5f7f3d-d797-4e77-9f0b-748c72644cdf.png)
 
-![image](https://user-images.githubusercontent.com/62555809/138767143-c6196c0b-4653-4dd6-a20b-c6543ca5e705.png)
+![image](https://user-images.githubusercontent.com/62555809/138905752-b18975ec-f3a1-400a-9cfa-aeb1696824b4.png)
+ 
+
+![1](https://user-images.githubusercontent.com/62555809/138906310-d54c953a-306b-4a5e-804f-cba877951245.png)
+
+![2](https://user-images.githubusercontent.com/62555809/138906357-d6d46f79-8e04-41bc-819d-6901100fe81e.png)
+
+![4](https://user-images.githubusercontent.com/62555809/138906354-3c69a64b-57d8-4255-ba8d-ea218ff31382.png)
+
+![5](https://user-images.githubusercontent.com/62555809/138906361-6e5f740e-16ca-4108-9680-82aa07dd1330.png)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Video
