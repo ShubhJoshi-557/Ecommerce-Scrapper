@@ -17,9 +17,10 @@ It scraps the two most popular Ecommerce Platforms in India and returns the top 
 
 + body-parser
 + express
-+ axios
++ axios (Web Scrapping)
 + jsdom
 + ejs
++ puppeteer (Web Automation)
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## How To Run :
 
