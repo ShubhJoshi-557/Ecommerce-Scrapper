@@ -26,7 +26,7 @@ It scraps the two most popular Ecommerce Platforms in India and returns the top 
 ## How To Run :
 
 + Install all the dependencies mentioned int package.json using npm (Node Package Manager)
-  + Eg. npm install axios
+  + Eg. ```npm install axios```
 + Run the main.js file using command: node main.js
 + Now the Express + Node Server is live in Localhost Port 3000
 + Go to browser and type: http://localhost:3000
