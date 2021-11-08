@@ -8,26 +8,26 @@ It scraps the two most popular Ecommerce Platforms in India and returns the top 
 ## Languages Used :
 
 ## Fontend:
-  + HTML
-  + CSS
-  + JAVASCRIPT
+  + ```HTML```
+  + ```CSS```
+  + ```JAVASCRIPT```
 ## Backend:
-  + Javascript (Node.js + Express.js)
+  + ```Javascript (Node.js + Express.js)```
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Javascript Dependencies :
 
-+ body-parser
-+ express
-+ axios (Web Scrapping)
-+ jsdom
-+ ejs
-+ puppeteer (Web Automation)
++ ```body-parser```
++ ```express```
++ ```axios (Web Scrapping)```
++ ```jsdom```
++ ```ejs```
++ ```puppeteer (Web Automation)```
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## How To Run :
 
 + Install all the dependencies mentioned int package.json using npm (Node Package Manager)
   + Eg. ```npm install axios```
-+ Run the main.js file using command: node main.js
++ Run the main.js file using command: ```node main.js```
 + Now the Express + Node Server is live in Localhost Port 3000
 + Go to browser and type: http://localhost:3000
 ----------------------------------------------------------------------------------------------------------------------------------------------------
